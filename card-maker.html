@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create Your Business Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="panel">
+      <h1>Business Card Maker</h1>
+
+      <div class="form-row">
+        <label>Full Name</label>
+        <input id="name" type="text" placeholder="Jane Doe" />
+      </div>
+
+      <div class="form-row">
+        <label>Job Title</label>
+        <input id="title" type="text" placeholder="Marketing Director" />
+      </div>
+
+      <div class="form-row">
+        <label>Company</label>
+        <input id="company" type="text" placeholder="Brightline Studio" />
+      </div>
+
+      <div class="form-row">
+        <label>Phone</label>
+        <input id="phone" type="text" placeholder="(555) 123-4567" />
+      </div>
+
+      <div class="form-row">
+        <label>Email</label>
+        <input id="email" type="email" placeholder="jane@brightline.com" />
+      </div>
+
+      <div class="form-row">
+        <label>Website</label>
+        <input id="website" type="text" placeholder="brightline.com" />
+      </div>
+
+      <div class="form-row">
+        <label>Background Color</label>
+        <input id="bgColor" type="color" value="#111827" />
+      </div>
+
+      <div class="form-row">
+        <label>Accent Color</label>
+        <input id="accentColor" type="color" value="#60a5fa" />
+      </div>
+
+      <button id="downloadBtn" class="button primary">Download PNG</button>
+      <button id="printBtn" class="button secondary">Print</button>
+    </div>
+
+    <div class="panel">
+      <h2>Preview</h2>
+      <div id="card" class="card">
+        <div class="card-top">
+          <div>
+            <div id="cardName" class="card-name">Your Name</div>
+            <div id="cardTitle" class="card-title">Your Title</div>
+            <div id="cardCompany" class="card-company">Your Company</div>
+          </div>
+          <div id="cardLogo" class="card-logo">YC</div>
+        </div>
+
+        <div class="card-bottom">
+          <div class="card-contact">
+            <span id="cardPhone"></span>
+            <span id="cardEmail"></span>
+          </div>
+          <div id="cardWebsite" class="card-website"></div>
+        </div>
+
+        <div id="cardAccent" class="card-accent"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
